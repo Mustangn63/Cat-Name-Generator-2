@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-brand-gray-dark;
+  }
+  h1, h2, h3 {
+    @apply font-bold;
+  }
+  h1 {
+    font-family: 'Pacifico', cursive; /* Apply cursive font to H1 */
+    @apply text-4xl text-brand-pink;
+  }
+  h2 {
+    @apply text-2xl text-brand-pink-dark;
+  }
+  h3 {
+    @apply text-xl text-brand-gray-dark;
+  }
+  button {
+     @apply bg-brand-pink hover:bg-brand-pink-dark text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-brand-pink focus:ring-opacity-50;
+  }
+  input[type="text"], textarea, select {
+     @apply block w-full px-3 py-2 border border-brand-gray-light rounded-md shadow-sm placeholder-brand-gray focus:outline-none focus:ring-brand-pink focus:border-brand-pink sm:text-sm;
+  }
+  label {
+    @apply block text-sm font-medium text-brand-gray-dark mb-1;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6;
+  }
+}
